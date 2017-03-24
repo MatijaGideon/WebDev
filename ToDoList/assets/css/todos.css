@@ -34,6 +34,7 @@ li {
 	color: #666;
 }
 
+/* every other */
 li:nth-child(2n){
 	background: #f7f7f7;
 }
