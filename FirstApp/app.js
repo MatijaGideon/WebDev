@@ -14,6 +14,15 @@ app.get("/fallinlovewith/:thing", function(req, res){
     //res.send("<h1>Hi there!</h1><h2>bla bla bla</h2>");
 });
 
+app.get("/posts", function(req, res){
+    var posts = [
+        {title: "Post 1", author: "Susy"},
+        {title: "Post 2", author: "Colt"}
+    ]
+    res.render("posts.ejs", {posts: posts});
+    //res.send("<h1>Hi there!</h1><h2>bla bla bla</h2>");
+});
+
 //route parameters
 app.get("/animal/:name/:number", function(req, res){
     var animal = req.params.name.toLowerCase();
